@@ -11,7 +11,7 @@ const steps = ['Lieferadresse', 'Zahlungsdetails'];
 
 const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const [checkoutToken, setCheckoutToken] = useState(null);
-  const [activeStep, setActiveStep] = useState('');
+  const [activeStep, setActiveStep] = useState(0);
   const [shippingData, setShippingData] = useState({});
   const classes = useStyles();
   const history = useHistory();
